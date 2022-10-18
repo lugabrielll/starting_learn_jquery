@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <script src="./jQuery/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#img1").mouseenter(function(){
+                $("#img1").animate({height:"165px",width:"165px"}, 200)
+                .mouseout(function(){
+                    $("#img1").animate({height:"150px",width:"150px"}, 200)
+                })
+            });
+            $("#img2").mouseenter(function(){
+                $("#img2").animate({height:"165px",width:"165px"}, 200)
+                .mouseout(function(){
+                    $("#img2").animate({height:"150px",width:"150px"}, 200)
+                })
+            });
+            $("#img5").mouseenter(function(){
+                $("#img5").animate({height:"165px",width:"165px"}, 200)
+                .mouseout(function(){
+                    $("#img5").animate({height:"150px",width:"150px"}, 200)
+                })
+            });
+            $("#img4").mouseenter(function(){
+                $("#img4").animate({height:"165px",width:"165px"}, 200)
+                .mouseout(function(){
+                    $("#img4").animate({height:"150px",width:"150px"}, 200)
+                })
+            });
+            $("#img3").mouseenter(function(){
+                $("#img3").animate({height:"165px",width:"165px"}, 200)
+                .mouseout(function(){
+                    $("#img3").animate({height:"150px",width:"150px"}, 200)
+                })
+            });
+            $("#img6").mouseenter(function(){
+                $("#img6").animate({height:"165px",width:"165px"}, 200)
+                .mouseout(function(){
+                    $("#img6").animate({height:"150px",width:"150px"}, 200)
+                })
+            });
+        });
+        
+    </script>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        .fundo{
+            width: 100%;
+            height: 1000px;
+            display:flex;
+            justify-content: center;
+            background-image: radial-gradient(rgb(150,150,150) ,rgb(41, 41, 41)40%,rgb(0, 0, 0)80%);
+        }
+        .logo{
+            display:flex;
+            justify-content: center;
+            width: 300px;
+            height: 300px;
+            margin-top: 250px;
+            position:relative;
+            z-index: 4;
+            top: 100px;
+        }
+        .logo img{
+            width: 250px;
+            z-index: 10;
+        }
+        .fundo1{
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            z-index: 3;
+            margin-top: 100px;
+        }
+        .item1{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            margin-left: 325px;
+            margin-top: 50px;
+            position: absolute;
+        }
+        .item2{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            margin-left: 325px;
+            margin-top: 600px;
+            position: absolute;
+        }
+        .fundo2{
+            height: 550px;
+            width: 100%;
+            margin-left: 0px;
+            margin-top: 125px;
+            z-index: 1;
+        }
+        .item3{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            margin-left: 75px;
+            margin-top: 75px;
+            position: absolute;
+        }
+        .item4{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            margin-left: 575px;
+            margin-top: 75px;
+            position: absolute;
+        }
+        .item5{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            margin-left: 75px;
+            margin-top: 325px;
+            position: absolute;
+        }
+        .item6{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            margin-left: 575px;
+            margin-top: 325px;
+            position: absolute;
+        }
+        .fundo1 img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+            border-bottom: black solid 4px;
+            border-top: black solid 4px;
+        }
+        header{
+            display:flex;
+            justify-content: center;
+            height: 100px;
+            width: 100%;
+            position: fixed;
+            background-image: url("Img/Desafio\ 1/background.jpg");
+            border-bottom: rgb(0, 0, 0) solid 4px;
+            box-shadow: rgb(0, 0, 0) 0px 2px 15px;
+            margin-left: -10px;
+            margin-top:-10px;
+            z-index: 10;
+        }
+        header img{
+            width: 350px;
+            height: 100px;
+        }
+        footer img{
+            width: 40px;
+            height: 40px;
+            margin-top: 5px;
+            position: absolute;
+            margin-right: 20px;
+        }
+        footer{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            background-color: salmon;
+            margin-top: -45px;
+            margin-left: -8px;
+            background-image: url("Img/Desafio\ 1/background.jpg");
+            border-top: rgb(0, 0, 0) solid 4px;
+            box-shadow: rgb(0, 0, 0) 0px 2px 15px;
+        }
+        ::-webkit-scrollbar {
+            width: 1em;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgb(32, 32, 32); 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgb(59, 59, 59);
+            border-radius: 8px;
+            border:rgb(31, 31, 31) solid 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(82, 82, 82, 0.7); 
+        }
+    </style>
+
+</head>
+    <body>
+        <header>
+            <img src="Img/Desafio 1/logo header.png">
+        </header>
+        <div class="fundo">
+        <div class="logo">
+            <img src="Img/Desafio 1/logo.png">
+        </div>
+        <div class="fundo1">
+            <div class="item1"> 
+                <img id="img1" src="Img/Desafio 1/superman.jpg">
+            </div>
+            <div class="item2">
+                <img id="img2" src="Img/Desafio 1/batman.jpg">
+            </div>
+            <div class="fundo2">
+                <div class="item3">
+                    <img id="img3" src="Img/Desafio 1/mulhermaravilha.jpg">
+                </div>
+                <div class="item4">
+                    <img id="img4" src="Img/Desafio 1/aquaman.jpg">
+                </div>
+                <div class="item5">
+                    <img id="img5" src="Img/Desafio 1/flash.jpg">
+                </div>
+                <div class="item6">
+                    <img id="img6" src="Img/Desafio 1/ciborgue.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="Img/Desafio 1/logodc.png"> 
+    </footer>
+    </body>
+</html>

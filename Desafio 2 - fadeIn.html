@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <script src="jQuery/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let i=0 ;
+        $(document).ready(function(){
+            //Imagem 1
+            $("#img1").fadeTo(200,0.2);
+            $("#img1").mouseenter(function(){
+                $("#img1").fadeTo(200,1);
+            });
+            $("#img1").mouseleave(function(){
+                $("#img1").fadeTo(200,0.2);
+            });
+            //imagem 2
+            $("#img2").fadeTo(200,0.2);
+            $("#img2").mouseenter(function(){
+                $("#img2").fadeTo(200,1);
+            });
+            $("#img2").mouseleave(function(){
+                $("#img2").fadeTo(200,0.2);
+            });
+            //Imagem 3
+            $("#img3").fadeTo(200,0.2);
+            $("#img3").mouseenter(function(){
+                $("#img3").fadeTo(200,1);
+            });
+            $("#img3").mouseleave(function(){
+                $("#img3").fadeTo(200,0.2);
+            });
+            //Imagem 4
+            $("#img4").fadeTo(200,0.2);
+            $("#img4").mouseenter(function(){
+                $("#img4").fadeTo(200,1);
+            });
+            $("#img4").mouseleave(function(){
+                $("#img4").fadeTo(200,0.2);
+            });
+            //Imagem 5
+            $("#img5").fadeTo(200,0.2);
+            $("#img5").mouseenter(function(){
+                $("#img5").fadeTo(200,1);
+            });
+            $("#img5").mouseleave(function(){
+                $("#img5").fadeTo(200,0.2);
+            });
+            //Imagem 6
+            $("#img6").fadeTo(200,0.2);
+            $("#img6").mouseenter(function(){
+                $("#img6").fadeTo(200,1);
+            });
+            $("#img6").mouseleave(function(){
+                $("#img6").fadeTo(200,0.2);
+            });
+            $("#fbalao").mouseleave(function(){
+                $("#balao").animate({top:"140%"},10000);
+                $("#balao").delay(0).fadeOut(1500);
+            });
+            // $("#fbase").mouseenter(function(){
+            //     $("#fbase").mouseup(0).animate(delay(500)({"margin-left":"50%"}));
+            //     $('#fbase').mouseout(0).animate({"margin-left":"91%"}, 10);
+            // });
+        }); 
+    </script>
+    <style>
+        body{
+            background-image:radial-gradient(rgb(30, 82, 102),rgb(31, 31, 31));
+            font-family:'Bauhaus 93', Times, serif;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            display:flex;
+            justify-content: center;
+        }
+        header img{
+            height: 80px;
+            width: 230px;
+            margin-top: 10px;
+        }
+        .logo2{
+            width: 90px;
+            height: 90px;
+            position:absolute;
+            margin-right: 88%;
+            margin-top:-140px;
+        }
+        .logo2 img{
+            width:100px;
+            height: 100px;
+            box-shadow: none;
+        }
+        .f1{
+            margin-top: 30px;
+            justify-content: space-evenly;
+            display: flex;
+            width: 100%;
+            height: 300px;
+        }
+        .f2{
+            margin-top: 30px;
+            justify-content: space-evenly;
+            display: flex;
+            width: 100%;
+            height: 300px;
+        }
+        div img{
+            height: 250px;
+            width: 250px;
+            border-radius: 20%;
+            box-shadow: rgb(34, 34, 34) 0px 0px 10px;
+        }
+        .fin{
+            height: 300px;
+            width: 250px;
+            color:rgb(95, 95, 95);
+            font-size:180%;
+            text-align: center;
+            transition: 0.2s;
+        }
+        .fin:hover{
+            color:rgb(255, 255, 255);
+            transition: 0.2s;
+            font-size:190%;
+        }
+        .jake{
+            height: 300px;
+            width: 250px;
+            color:rgb(95, 95, 95);
+            font-size:180%;
+            text-align: center;
+            transition: 0.2s;
+        }
+        .jake:hover{
+            color:rgb(255, 196, 0);
+            transition: 0.2s;
+            font-size:190%;
+        }
+        .caroco{
+            height: 300px;
+            width: 250px;
+            color:rgb(95, 95, 95);
+            font-size:180%;
+            text-align: center;
+            transition: 0.2s;
+        }
+        .caroco:hover{
+            color:rgb(226, 135, 211);
+            transition: 0.2s;
+            font-size:190%;
+        }
+        .gelado{
+            height: 300px;
+            width: 250px;
+            color:rgb(95, 95, 95);
+            font-size:180%;
+            text-align: center;
+            transition: 0.2s;
+        }
+        .gelado:hover{
+            color:rgb(110, 197, 255);
+            transition: 0.2s;
+            font-size:190%;
+        }
+        .jujuba{
+            height: 300px;
+            width: 250px;
+            color:rgb(95, 95, 95);
+            font-size:180%;
+            text-align: center;
+            transition: 0.2s;
+        }
+        .jujuba:hover{
+            color:rgb(241, 81, 148);
+            transition: 0.2s;
+            font-size:190%;
+        }
+        .beemo{
+            height: 300px;
+            width: 250px;
+            color:rgb(95, 95, 95);
+            font-size:180%;
+            text-align: center;
+            transition: 0.2s;
+        }
+        .beemo:hover{
+            color:rgb(88, 165, 129);
+            transition: 0.2s;
+            font-size:190%;
+        }
+        footer{
+            display: flex;
+            width: 100%;
+            height: 80px;
+            margin-top: 10px;
+        }
+        footer img{
+            margin-right: 5px;
+            height: 72px;
+            width: 100px;
+            display: flex;
+            margin-top: 15px;
+            margin-left:91%;
+        }
+        ::-webkit-scrollbar {
+            width: 1em;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgb(32, 32, 32); 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgb(35, 69, 86);
+            border-radius: 8px;
+            border:rgb(31, 31, 31) solid 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(35, 69, 86, 0.7); 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="balao" class="logo2">
+            <img src="Img/Desafio 2/footer2.png">
+        </div>
+        <a href="https://www.cartoonnetwork.com.br/show/hora-de-aventura">
+        <img src="Img/Desafio 2/loglo.png">
+    </a>
+</header>
+    <div class="f1">
+        <div class="fin">
+            <img id="img1" src="Img/Desafio 2/1fin.jpg">
+            <label>Fin</label>
+        </div>
+        <div id="fbalao" class="jake">
+            <img id="img2" src="Img/Desafio 2/1jake (2).jpg">
+            <label>Jake</label>
+        </div>
+        <div class="caroco">
+            <img id="img3" src="Img/Desafio 2/1caroco (2).jpg">
+            <label>Princesa Caroço</label>
+        </div>
+    </div>
+    <div class="f2">
+        <div class="gelado">
+            <img id="img4" src="Img/Desafio 2/1reigelado (2).jpg">
+            <label>Rei Gelado</label>
+        </div>
+        <div class="jujuba">
+            <img id="img5" src="Img/Desafio 2/1jujuba.jpg">
+            <label>Princesa Jujuba</label>
+        </div>
+        <div class="beemo">
+            <img id="img6" src="Img/Desafio 2/1beemo.jpg">
+            <label>Beemo</label>
+        </div>  
+    </div>
+    <footer>
+        <img id="fbase" src="Img/Desafio 2/footer1.png"> 
+    </footer>
+</body>
+</html>
